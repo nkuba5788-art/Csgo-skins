@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Flip</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #080b12;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #111827;
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid #263247;
+}
+
+h1 {
+    margin: 0 0 8px;
+}
+
+.balance {
+    color: #ffd43b;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    overflow-x: auto;
+    background: #0d121c;
+}
+
+nav button {
+    border: 0;
+    padding: 12px 18px;
+    border-radius: 10px;
+    background: #202a3a;
+    color: white;
+    font-weight: bold;
+}
+
+nav button.active {
+    background: #e7ad00;
+    color: #111;
+}
+
+.page {
+    display: none;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.page.active {
+    display: block;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: #151d2b;
+    border: 1px solid #2a374c;
+    border-radius: 16px;
+    padding: 15px;
+    text-align: center;
+}
+
+.case-icon {
+    font-size: 60px;
+    padding: 15px;
+}
+
+.price {
+    color: #ffd43b;
+    font-weight: bold;
+}
+
+button.action {
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 18px;
+    background: #e7ad00;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
